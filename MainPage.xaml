@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegistroProductos.MainPage"
+             Title="Registro de Productos">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30"
+                             Spacing="15">
+
+            <Label Text="REGISTRO DE PRODUCTOS"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Nombre del producto" />
+
+            <Entry x:Name="NombreEntry"
+                   Placeholder="Ingrese el nombre del producto" />
+
+            <Label Text="Descripción" />
+
+            <Entry x:Name="DescripcionEntry"
+                   Placeholder="Ingrese la descripción" />
+
+            <Label Text="Precio" />
+
+            <Entry x:Name="PrecioEntry"
+                   Placeholder="Ingrese el precio"
+                   Keyboard="Numeric" />
+
+            <Label Text="Cantidad" />
+
+            <Entry x:Name="CantidadEntry"
+                   Placeholder="Ingrese la cantidad"
+                   Keyboard="Numeric" />
+
+            <Label Text="Fecha de registro" />
+
+            <DatePicker x:Name="FechaRegistroPicker" />
+
+            <Button Text="Guardar Producto"
+                    Clicked="OnGuardarProductoClicked"
+                    Margin="0,15,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
