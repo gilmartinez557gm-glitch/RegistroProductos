@@ -26,7 +26,7 @@ namespace RegistroProductos
             // Validar nombre
             if (string.IsNullOrWhiteSpace(NombreEntry.Text))
             {
-                await DisplayAlert("Error", "Ingrese el nombre del producto.", "Aceptar");
+                await DisplayAlert("Error de registro", "Por favor, ingrese nombre del producto.", "Aceptar");
                 return;
             }
 
